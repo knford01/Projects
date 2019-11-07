@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>REI on the Fly</title>
+
+  <!-- Custom fonts for this theme -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Theme CSS -->
+  <link href="css/freelancer.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top" ng-app="myApp">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Top of Page</a>
+      <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#PropertySelector">Property Selector</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Tutorial">Tutorial</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Masthead -->
+  <header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+
+      <!-- Masthead Avatar Image -->
+      <img class="masthead-avatar mb-5" src="img/estate-agent.png" alt="">
+
+      <!-- Masthead Heading -->
+      <h1 class="masthead-heading text-uppercase mb-0">REI on the Fly</h1>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- Masthead Subheading -->
+      <p class="masthead-subheading font-weight-light mb-0">Offer Price-Remodel Cost-List Price</p>
+
+    </div>
+  </header>
+
+  <!-- Property Selector -->
+  <section class="page-section portfolio" id="PropertySelector">
+    <div class="container">
+
+      <!-- Property Selector Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Property Selector</h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- Property Selector Grid Items -->
+      <div class="row">
+
+        <!-- Property Selector Item 1 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#AddProperty">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/AddIcon.png" alt="">
+          </div>
+        </div>
+		
+	    <!-- Property Selector Item 2 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#SavedProperty">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/SavedIcon.png" alt="">
+          </div>
+        </div>	
+		
+		<!-- Property Selector Item 3 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#UpdateProperty">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/UpdateIcon.png" alt="">
+          </div>
+        </div>
+		
+		<!-- Property Selector Item 4 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#DeleteProperty">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/DeleteIcon.png" alt="">
+          </div>
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+  </section>
+
+  <!-- Tutorial Section -->
+  <section class="page-section bg-primary text-white mb-0" id="Tutorial">
+    <div class="container">
+
+      <!-- Tutorial Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-white">Tutorial</h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- Tutorial Section Content -->
+      <div class="row">
+        <div class="col-lg-4 ml-auto">
+          <p class="lead">REI on the Fly is a program that allows you to analyze a potential investment property. Simply add a property your intersted in 
+						  buying and see what you should offer. REIF will keep track of properties you are analyzing, offer National Average Costs to Remodel, 
+						  and suggest the potential resell price of the property.</p>
+        </div>
+        <div class="col-lg-4 mr-auto">
+          <p class="lead">Begin by selecting New Property above and entering the details about the property. From there you can see a suggested purchase price 
+						  and options to remodel the property. REIF will do the rest so you can decide if the deal is profitable before you buy. If you want to 
+						  send a client a report choose "Send Report" from the CMA page. </p>
+        </div>
+      </div>
+   </section>
+   
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <div class="row">
+
+        <!-- Footer Location -->
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Location</h4>
+          <p class="lead mb-0">1835 S Donaghey Ave
+            <br>Conway, AR 72034</p>
+        </div>
+
+        <!-- Footer Social Icons -->
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Around the Web</h4>
+          <a class="btn btn-outline-light btn-social mx-1" href="#">
+            <i class="fab fa-fw fa-facebook-f"></i>
+          </a>
+          <a class="btn btn-outline-light btn-social mx-1" href="#">
+            <i class="fab fa-fw fa-twitter"></i>
+          </a>
+          <a class="btn btn-outline-light btn-social mx-1" href="#">
+            <i class="fab fa-fw fa-linkedin-in"></i>
+          </a>
+          <a class="btn btn-outline-light btn-social mx-1" href="#">
+            <i class="fab fa-fw fa-dribbble"></i>
+          </a>
+        </div>
+
+        <!-- Footer About Text -->
+        <div class="col-lg-4">
+          <h4 class="text-uppercase mb-4">About REIF</h4>
+          <p class="lead mb-0">REIF is a program used to analyze</br> Real Estate Investments</p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Copyright Section -->
+  <section class="copyright py-4 text-center text-white">
+    <div class="container">
+      <small>Copyright &copy; Your Website 2019</small>
+    </div>
+  </section>
+
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+  <div class="scroll-to-top d-lg-none position-fixed ">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  </div>
+
+  <!-- Property Selector Modals -->
+
+  <!-- Property Selector ADD PROPERTY -->
+  <div class="portfolio-modal modal fade" id="AddProperty" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+			  
+                <!-- Property Selector - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Add Property</h2>
+				
+                <!-- Property Selector -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+				
+                <!-- Property Selector - Add New Values -->
+				<div ng-controller="SubjectCtrl">
+				<form accept-charset="UTF-8" action="action_page.php" autocomplete="off" method="GET" target="_blank">
+					<fieldset>
+						<legend><th>Details:</th></legend>
+					<table style="margin-left:auto;margin-right:auto;">
+					<tr>
+					<th
+						<label for="name">Address/Details</label><br /> 
+						<input name="name" type="text" value="" ng-model="Q1"/> 
+					</th>
+					<th
+						<label for="name">Square Feet</label><br /> 
+						<select name="Square Feet" ng-model="Q2">
+							<option ng-model="Q2"   name="Q2" value= 800>800</option>
+							<option ng-model="Q2"   name="Q2" value= 900>900</option>
+							<option ng-model="Q2"   name="Q2" value= 1000>1000</option>
+							<option ng-model="Q2"   name="Q2" value= 1100>1100</option>
+							<option ng-model="Q2"   name="Q2" value= 1200>1200</option>
+							<option ng-model="Q2"   name="Q2" value= 1300>1300</option>
+							<option ng-model="Q2"   name="Q2" value= 1400>1400</option>
+							<option ng-model="Q2"   name="Q2" value= 1500>1500</option>
+						</select> <br /> 
+					</th>
+					<th
+						<label for="name">Overall Condition</label><br /> 
+						<select name="Overall Condition" ng-model="Q3">
+							<option ng-model="Q3"   name="Q3" value=1 >Total Remodel</option>
+							<option ng-model="Q3"   name="Q3" value=2 >Needs Updating</option>
+							<option ng-model="Q3"   name="Q3" value=3 >Lived In</option>
+							<option ng-model="Q3"   name="Q3" value=4 >Like New</option>
+						</select> <br /> 
+					</th>
+					</table></br>
+						<legend>Quality of Construction:</legend>
+					<table style="margin-left:auto;margin-right:auto;">
+					<th
+						<label for="name">Exterior |</label><br /> 
+						<select name="Exterior" ng-model="Q4">
+							<option ng-model="Q4"   name="Q4" value=1 >1</option>
+							<option ng-model="Q4"   name="Q4" value=2 >2</option>
+							<option ng-model="Q4"   name="Q4" value=3 >3</option>
+							<option ng-model="Q4"   name="Q4" value=4 >4</option>
+							<option ng-model="Q4"   name="Q4" value=5 >5</option>
+						</select> <br /> 
+					<th
+						<label for="name">Garage Capacity |</label><br /> 
+						<select name="Garage Capacity" ng-model="Q5">
+							<option ng-model="Q5"   name="Q5" value=0 >0</option>
+							<option ng-model="Q5"   name="Q5" value=1 >1</option>
+							<option ng-model="Q5"   name="Q5" value=2 >2</option>
+						</select> <br /> 
+					<th
+						<label for="name">Kitchen |</label><br /> 
+						<select name="Kitchen" ng-model="Q6">
+							<option ng-model="Q6"   name="Q6" value=1 >1</option>
+							<option ng-model="Q6"   name="Q6" value=2 >2</option>
+							<option ng-model="Q6"   name="Q6" value=3 >3</option>
+							<option ng-model="Q6"   name="Q6" value=4 >4</option>
+							<option ng-model="Q6"   name="Q6" value=5 >5</option>
+						</select> <br /> 
+					<th
+						<label for="name">Bathrooms |</label><br /> 
+						<select name="Bathrooms" ng-model="Q7">
+							<option ng-model="Q7"   name="Q7" value=1 >1</option>
+							<option ng-model="Q7"   name="Q7" value=2 >2</option>
+							<option ng-model="Q7"   name="Q7" value=3 >3</option>
+							<option ng-model="Q7"   name="Q7" value=4 >4</option>
+							<option ng-model="Q7"   name="Q7" value=5 >5</option>
+						</select> <br /> 
+					<th
+						<label for="name">Floor Covering |</label><br /> 
+						<select name="Floor Covering" ng-model="Q8">
+							<option ng-model="Q8"   name="Q8" value=1 >1</option>
+							<option ng-model="Q8"   name="Q8" value=2 >2</option>
+							<option ng-model="Q8"   name="Q8" value=3 >3</option>
+							<option ng-model="Q8"   name="Q8" value=4 >4</option>
+							<option ng-model="Q8"   name="Q8" value=5 >5</option>
+						</select> <br /> 
+					<th
+						<label for="name">Fireplace</label><br /> 
+						<select name="Fireplace" ng-model="Q9">
+							<option value=0 >0</option>
+							<option value=1 >1</option>
+						</select> <br /> 
+					</th>
+					</tr>
+					</table>
+        </fieldset></br>    
+        				
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5">Input the details about the new property you are looking to analyze. Overall condition referes to the wear and tear aspects 
+				        of the property since it was new or last remodeled. Quality of construction refers to the materials and skills used when the property was constructed 
+                or last remodeled with 1 being poor and 5 being superior. </p>
+                  <button class="btn btn-primary" href="#" data-toggle="modal" data-dismiss="modal"  data-target="#FinalPage" ng-click="makeurl(Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9)">
+                      Generate Report
+                  </button>
+				          <button class="btn btn-primary" href="#" data-dismiss="modal">
+					            Close Window
+				          </button>
+				</div>
+			  </form>				
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Property Selector SAVED -->
+  <div class="portfolio-modal modal fade" id="SavedProperty" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Property Selector - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Saved Properties</h2>
+				
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+				
+                <!-- Property Selector - GET LIST OF ALL ADDRESSES -->
+				<legend><th>Address/Details:</th></legend>			
+					<div ng-controller="SubjectCtrl">					
+						<select ng-model="selectedItem" ng-options="subjectproperty as subjectproperty.address for subjectproperty in properties"></select></br></br>
+					<table style="margin-left:auto;margin-right:auto;">
+					<th
+						<label for="name">SQFT | </label><br /> 
+							<pre>{{selectedItem.sqft | json}}</pre> 
+					<th
+						<label for="name">Overall Condition | </label><br /> 
+							<pre>{{selectedItem.condition | json}}</pre> 
+					<th
+						<label for="name">Exterior | </label><br /> 
+							<pre>{{selectedItem.exterior | json}}</pre> 
+					<th
+						<label for="name">Garage Capacity</label><br /> 
+							<pre>{{selectedItem.garagecap | json}}</pre> 
+					</th>
+					</table>
+					<table style="margin-left:auto;margin-right:auto;">
+					<th
+						<label for="name">Kitchen | </label><br /> 
+							<pre>{{selectedItem.kitchen | json}}</pre>
+					<th
+						<label for="name">Bathrooms | </label><br /> 
+							<pre>{{selectedItem.bathrooms | json}}</pre> 
+					<th
+						<label for="name">Flooring | </label><br /> 
+							<pre>{{selectedItem.flooring | json}}</pre> 
+					<th
+						<label for="name">Fireplaces</label><br /> 
+							<pre>{{selectedItem.fireplace | json}}</pre> 
+					</th>
+					</table>
+					
+            <!-- Property Selector - SELECT BUTTON AND CLOSE BUTTON -->
+            <p class="mb-5">Choose one of the properties you have added to the list that you would like to analyze.</p>   
+					<!--<input class="btn btn-primary" type="button" value="Select Property" data-target="#CallCMA" onClick="update()"/>-->
+						<button class="btn btn-primary" href="#" data-toggle="modal" data-dismiss="modal"  data-target="#FinalPage" >
+								Generate Report
+						</button>
+						<button class="btn btn-primary" href="#" data-dismiss="modal">							
+								Close Window
+						</button>
+​					</div>	
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Property Selector UPDATE -->
+  <div class="portfolio-modal modal fade" id="UpdateProperty" tabindex="-1" role="dialog" aria-labelledby="portfolioModal5Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+			  
+                <!-- Property Selector - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Update Property</h2>
+				
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+				
+                <!-- Property Selector - UPDATE VALUES -->
+				<div ng-controller="SubjectCtrl">
+				<form accept-charset="UTF-8" action="action_page.php" autocomplete="off" method="GET" target="_blank">
+				<fieldset>
+					<legend><th>Address/Details</th></legend>
+				<table style="margin-left:auto;margin-right:auto;">
+					<tr>
+					<th
+						<label for="name"></label><br /> 
+						<select ng-model="selectedItem" ng-change="update()" ng-options="subjectproperty as subjectproperty.address for subjectproperty in properties"></select> 
+				</table></br>
+				
+				<!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                
+				
+				<table style="margin-left:auto;margin-right:auto;">
+					<th
+						<label for="name">Square Feet | </label><br /> 
+							<select name="Square Feet" ng-model="Q2" value="900">
+								<option value="" selected disabled hidden>{{selectedItem.sqft | json}}</option>
+								<option ng-model="Q2"   name="Q2" value= 800>800</option>
+								<option ng-model="Q2"   name="Q2" value= 900>900</option>
+								<option ng-model="Q2"   name="Q2" value= 1000>1000</option>
+								<option ng-model="Q2"   name="Q2" value= 1100>1100</option>
+								<option ng-model="Q2"   name="Q2" value= 1200>1200</option>
+								<option ng-model="Q2"   name="Q2" value= 1300>1300</option>
+								<option ng-model="Q2"   name="Q2" value= 1400>1400</option>
+								<option ng-model="Q2"   name="Q2" value= 1500>1500</option>
+							</select> <br /> 
+					</th>
+					<th
+						<label for="name">New Overall Condition |</label><br /> 
+						<select name="Overall Condition" ng-model="Q3">
+							<option value="" selected disabled hidden>{{selectedItem.condition | json}}</option>
+							<option ng-model="Q3"   name="Q3" value=1 >Total Remodel</option>
+							<option ng-model="Q3"   name="Q3" value=2 >Needs Updating</option>
+							<option ng-model="Q3"   name="Q3" value=3 >Lived In</option>
+							<option ng-model="Q3"   name="Q3" value=4 >Like New</option>
+							
+						</select> <br /> 
+					</th>
+					<th
+						<label for="name">Exterior |</label><br /> 
+						<select name="Exterior" ng-model="Q4">
+							<option value="" selected disabled hidden>{{selectedItem.exterior | json}}</option>
+							<option ng-model="Q4"   name="Q4" value=1 >1</option>
+							<option ng-model="Q4"   name="Q4" value=2 >2</option>
+							<option ng-model="Q4"   name="Q4" value=3 >3</option>
+							<option ng-model="Q4"   name="Q4" value=4 >4</option>
+							<option ng-model="Q4"   name="Q4" value=5 >5</option>
+						</select> <br /> 
+								</th>
+					<th
+						<label for="name">Garage Capacity</label><br /> 
+						<select name="Garage Capacity" ng-model="Q5">
+							<option value="" selected disabled hidden>{{selectedItem.garagecap | json}}</option>
+							<option ng-model="Q5"   name="Q5" value=0 >0</option>
+							<option ng-model="Q5"   name="Q5" value=1 >1</option>
+							<option ng-model="Q5"   name="Q5" value=2 >2</option>
+						</select> <br /> 
+								</th>
+				</table>
+				<table style="margin-left:auto;margin-right:auto;">
+					<th
+						<label for="name">Kitchen |</label><br /> 
+						<select name="Kitchen" ng-model="Q6">
+							<option value="" selected disabled hidden>{{selectedItem.kitchen | json}}</option>
+							<option ng-model="Q6"   name="Q6" value=1 >1</option>
+							<option ng-model="Q6"   name="Q6" value=2 >2</option>
+							<option ng-model="Q6"   name="Q6" value=3 >3</option>
+							<option ng-model="Q6"   name="Q6" value=4 >4</option>
+							<option ng-model="Q6"   name="Q6" value=5 >5</option>
+						</select> <br /> 
+								</th>
+					<th
+						<label for="name">Bathrooms |</label><br /> 
+						<select name="Bathrooms" ng-model="Q7">
+							<option value="" selected disabled hidden>{{selectedItem.bathrooms | json}}</option>
+							<option ng-model="Q7"   name="Q7" value=1 >1</option>
+							<option ng-model="Q7"   name="Q7" value=2 >2</option>
+							<option ng-model="Q7"   name="Q7" value=3 >3</option>
+							<option ng-model="Q7"   name="Q7" value=4 >4</option>
+							<option ng-model="Q7"   name="Q7" value=5 >5</option>
+						</select> <br /> 
+								</th>
+					<th
+						<label for="name">New Floor Covering</label><br /> 
+						<select name="Floor Covering" ng-model="Q8">
+							<option value="" selected disabled hidden>{{selectedItem.flooring | json}}</option>
+							<option ng-model="Q8"   name="Q8" value=1 >1</option>
+							<option ng-model="Q8"   name="Q8" value=2 >2</option>
+							<option ng-model="Q8"   name="Q8" value=3 >3</option>
+							<option ng-model="Q8"   name="Q8" value=4 >4</option>
+							<option ng-model="Q8"   name="Q8" value=5 >5</option>
+						</select> <br /> 
+								</th>
+					<th
+						<label for="name">New Fireplace</label><br /> 
+						<select name="Fireplace" ng-model="Q9">
+							<option value="" selected disabled hidden>{{selectedItem.fireplace | json}}</option>
+							<option value=0 >0</option>
+							<option value=1 >1</option>
+						</select> <br /> </br>
+					</th>
+					</tr>
+					</table>
+				</fieldset>
+
+				
+                <!-- Portfolio Modal - Text -->
+          <p class="mb-5">To update a property, start by selecting from the top drop down list. This will allow you to see the current values and update them individually.</p>
+          
+          <input class="btn btn-primary" type="button" value="Update Property" ng-click="UpdateSubject2(selectedItem.id, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9)" /> 
+          <button class="btn btn-primary" href="#" data-dismiss="modal">
+            Close Window
+          </div>
+				</form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Property Selector DELETE -->
+  <div class="portfolio-modal modal fade" id="DeleteProperty" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+			  
+                <!-- Property Selector Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Delete a Property</h2>
+				
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+				
+          <!-- Property Selector - GET LIST OF ALL ADDRESSES -->
+				  <legend><th>Address/Details:</th></legend>			
+					<div ng-controller="SubjectCtrl">					
+						<select ng-model="selectedItem" ng-options="subjectproperty as subjectproperty.address for subjectproperty in properties"></select>
+            <table style="margin-left:auto;margin-right:auto;">
+              <th
+                <label for="name">SQFT | </label><br /> 
+                  <pre>{{selectedItem.sqft | json}}</pre> 
+              <th
+                <label for="name">Overall Condition | </label><br /> 
+                  <pre>{{selectedItem.condition | json}}</pre> 
+              <th
+                <label for="name">Exterior | </label><br /> 
+                  <pre>{{selectedItem.exterior | json}}</pre> 
+              <th
+                <label for="name">Garage Capacity</label><br /> 
+                  <pre>{{selectedItem.garagecap | json}}</pre> 
+              </th>
+              </table>
+              <table style="margin-left:auto;margin-right:auto;">
+              <th
+                <label for="name">Kitchen | </label><br /> 
+                  <pre>{{selectedItem.kitchen | json}}</pre>
+              <th
+                <label for="name">Bathrooms | </label><br /> 
+                  <pre>{{selectedItem.bathrooms | json}}</pre> 
+              <th
+                <label for="name">Flooring | </label><br /> 
+                  <pre>{{selectedItem.flooring | json}}</pre> 
+              <th
+                <label for="name">Fireplaces</label><br /> 
+                  <pre>{{selectedItem.fireplace | json}}</pre> 
+              </th>
+              </table>
+
+                <!-- Property Selector - DELETE BUTTON AND CLOSE BUTTON -->
+                <p class="mb-5">If you no longer wish to keep a saved property, you may delete it by selecting it from the list above and choosing Delete Property.</p>   
+					        <input class="btn btn-primary" type="button" value="Delete Property" ng-click="deleteSubject(selectedItem.id)" onClick="history.go()"/> 
+					      	<button class="btn btn-primary" href="#" data-dismiss="modal">							
+							        	Close Window
+					      	</button>
+​					</div>				
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ <!-- Property Selector CALL CMA-->
+  <div class="portfolio-modal modal fade" id="FinalPage" tabindex="-1" role="dialog" aria-labelledby="portfolioModal7Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+			  
+                <!-- Property Selector - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Your Custom Property Analysis</h2>
+				
+                <!-- Property Selector -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+		
+                <!-- Property Selector - Image--> 
+
+                <option value="" selected disabled hidden>{{selectedItem.garagecap | json}}</option>
+    
+                <legend><th>Address/Details:</th></legend>	
+				<div ng-controller="SubjectCtrl">					
+						<select ng-model="selectedItem" ng-change="CallCMA(selectedItem.sqft, selectedItem.varsum)" ng-change="update()" ng-options="subjectproperty as subjectproperty.address for subjectproperty in properties"></select>
+							<pre>{{selectedItem.address | json}}</pre>
+					
+						<select ng-model="selectedItem2" ng-options="multipliers as multipliers.id for multipliers in multiplier"></select>
+              <pre>{{selectedItem2.id | json}}</pre>
+              
+            <select ng-model="selectedItem3" ng-options="Answer as Answer for Answer in callAnswer"></select>
+              <pre>{{selectedItem3 | json}}</pre>
+
+            <select class="btn btn-primary" ng-model="selectedItem3" ng-options="Answer as Answer for Answer in callAnswer" selected></select>
+            <option value="" selected disabled hidden>{{selectedItem.garagecap | json}}</option>
+            <pre>{{selectedItem3 | json}}</pre>
+				
+                <!-- Property Selector - Text -->
+                <p class="mb-5"> So accurate you can take it to the bank </p>
+                <input class="btn btn-primary" type="button" value="Delete Property" ng-click="CallCMA(selectedItem.sqft, selectedItem.varsum)" ng-change="update()" /> 
+              </div>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  Close Window
+          </form>
+            </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Project JavaScript -->
+  <script src="js/Functions.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/freelancer.min.js"></script>
+
+</body>
+
+</html>
